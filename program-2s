@@ -1,0 +1,21 @@
+% Fact: socrates is human. human(socrates). % Rule: X is mortal IF X is human. mortal(X) :- human(X). % Query: Is socrates mortal?
+
+?- mortal(socrates).
+
+% Output: true.
+
+% Query: Is Socrates mortal?
+
+?- mortal(socrates).
+
+% Query: Is Socrates human?
+
+?- human(socrates).
+
+% Query: Who is mortal?
+
+?- mortal(X).
+
+% Query: Who is human?
+
+?- human(X).
