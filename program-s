@@ -1,0 +1,15 @@
+program : 1
+
+likes(john, pizza).
+
+likes(john, burger).
+
+Query:
+
+?- likes(john, X).
+
+Output:
+
+X = pizza ;
+
+X = burger.
