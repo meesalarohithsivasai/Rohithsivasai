@@ -1,0 +1,3 @@
+% --- FACTS --- male(bob). male(tom). male(jim). female(pam). female(liz). female(ann). % parent(Parent, Child). parent(bob, liz). parent(bob, tom). parent(pam, liz). parent(tom, ann). parent(tom, jim). % --- RULES --- % X is a father if X is a parent AND X is male. father(X, Y) :- parent(X, Y), male(X). % X is a mother if X is a parent AND X is female. mother(X, Y) :- parent(X, Y), female(X).
+
+% X is a grandparent if X is parent of Z AND Z is parent of Y. grandparent(X, Y) :- parent(X, Z), parent(Z, Y).
