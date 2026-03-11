@@ -1,0 +1,17 @@
+% --- FACTS --- likes(john, pizza). likes(john, sushi). likes(mary, sushi). likes(mary, chocolate). likes(paul, pizza). food_type(pizza, italian). food_type(sushi, japanese). food_type(chocolate, dessert).
+
+Queries to try :
+
+1. Does John like pizza?
+
+?- likes(john, pizza).
+
+2. Who likes sushi?
+
+?- likes(Who, sushi).
+
+(Press ; to see multiple answers).
+
+3. What does Mary like? ?- likes(mary, What).
+
+4. Is there anyone who likes "burger"? ?- likes(_, burger).
